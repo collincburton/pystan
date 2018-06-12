@@ -14,8 +14,8 @@ from pystan.lookup import lookup
 
 logger = logging.getLogger('pystan')
 logger.addHandler(logging.NullHandler())
-# if len(logger.handlers) == 1:
-#     logging.basicConfig(level=logging.INFO)
+if len(logger.handlers) == 1:
+    logger.setLevel(logging.INFO)
 
 
 
